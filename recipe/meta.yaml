@@ -1,6 +1,6 @@
 {% set name = "google-cloud-iam" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "c80b329fd0cdfb05e0bca1a73af4a2e6c5cfb145e356f6af7dc102b24fa4a895" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "5351a22b56c0d7b72019a387737ce7b156babce87a7f31b88fd222bd55e9baff" %}
 
 package:
   name: {{ name|lower }}
@@ -35,15 +35,9 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'IAM Service Account Credentials API client library'
-  description: IAM Service Account Credentials API is a Google Cloud service that lets client applications
-    communicate with the Cloud Identity and Access Management (IAM) platform. Cloud IAM lets administrators
-    authorize who can take action on specific resources, giving you full control and visibility to manage
-    Google Cloud resources centrally. For enterprises with complex organizational structures, hundreds of
-    workgroups, and many projects, Cloud IAM provides a unified view into security policy across your entire
-    organization, with built-in auditing to ease compliance processes.
-
-    See the [quick start guide](https://googleapis.dev/python/iamcredentials/latest/index.html#quick-start).
+  summary: IAM Service Account Credentials API client library
+  description: "IAM Service Account Credentials API is a Google Cloud service that lets client applications communicate with the Cloud Identity and Access Management (IAM) platform. Cloud IAM lets administrators authorize who can take action on specific resources, giving you full control and visibility to manage Google Cloud\
+    \ resources centrally. For enterprises with complex organizational structures, hundreds of workgroups, and many projects, Cloud IAM provides a unified view into security policy across your entire organization, with built-in auditing to ease compliance processes.\nSee the [quick start guide](https://googleapis.dev/python/iamcredentials/latest/index.html#quick-start)."
 
   doc_url: https://googleapis.dev/python/iamcredentials/latest/index.html
   dev_url: https://github.com/googleapis/python-iam
