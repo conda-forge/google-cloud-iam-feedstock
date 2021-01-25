@@ -5,9 +5,13 @@ Home: https://github.com/googleapis/python-iam
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-iam-feedstock/blob/master/LICENSE.txt)
 
 Summary: IAM Service Account Credentials API client library
+
+Development: https://github.com/googleapis/python-iam
+
+Documentation: https://googleapis.dev/python/iamcredentials/latest/index.html
 
 IAM Service Account Credentials API is a Google Cloud service that lets client applications communicate with the Cloud Identity and Access Management (IAM) platform. Cloud IAM lets administrators authorize who can take action on specific resources, giving you full control and visibility to manage Google Cloud resources centrally. For enterprises with complex organizational structures, hundreds of workgroups, and many projects, Cloud IAM provides a unified view into security policy across your entire organization, with built-in auditing to ease compliance processes.
 See the [quick start guide](https://googleapis.dev/python/iamcredentials/latest/index.html#quick-start).
