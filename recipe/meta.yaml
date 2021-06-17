@@ -1,6 +1,6 @@
 {% set name = "google-cloud-iam" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "7966346d1e67ce8a3082eb9fab7a31045adc71840ff5811fefa1f36246b53298" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "1f64b78c854c0629f20903011d6def28c981ce5682a5221031f6ae1caa0a1fea" %}
 
 package:
   name: {{ name|lower }}
@@ -17,12 +17,13 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip >=18.1
   run:
-    - python
-    - google-api-core-grpc >=1.14.0,<2.0.0dev
-    - enum34
+    - python >=3.6
+    - google-api-core-grpc >=1.22.2,<2.0.0dev
+    - proto-plus >=0.4.0
+    - packaging >=14.3
 
 test:
   imports:
