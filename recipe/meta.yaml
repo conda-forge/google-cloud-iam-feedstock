@@ -1,6 +1,6 @@
 {% set name = "google-cloud-iam" %}
-{% set version = "2.12.0" %}
-{% set sha256 = "95f4f89605b89f793916cd8ec2783c2681c6603c23a0a4f368a8447f7e4ef950" %}
+{% set version = "2.12.1" %}
+{% set sha256 = "fe507085447ecf461dafd2cd4b8016c5899e58e520bd04b51bb3ab6f6b08faff" %}
 
 package:
   name: {{ name|lower }}
@@ -37,8 +37,8 @@ about:
   license_family: Apache
   license_file: LICENSE
   summary: IAM Service Account Credentials API client library
-  description: "IAM Service Account Credentials API is a Google Cloud service that lets client applications communicate with the Cloud Identity and Access Management (IAM) platform. Cloud IAM lets administrators authorize who can take action on specific resources, giving you full control and visibility to manage Google Cloud\
-    \ resources centrally. For enterprises with complex organizational structures, hundreds of workgroups, and many projects, Cloud IAM provides a unified view into security policy across your entire organization, with built-in auditing to ease compliance processes.\nSee the [quick start guide](https://googleapis.dev/python/iamcredentials/latest/index.html#quick-start)."
+  description: "IAM Service Account Credentials API is a Google Cloud service that lets client applications communicate with the Cloud Identity and Access Management (IAM) platform. Cloud IAM lets administrators authorize who can take action on specific resources, giving you full control and visibility to manage Google Cloud
+    resources centrally. For enterprises with complex organizational structures, hundreds of workgroups, and many projects, Cloud IAM provides a unified view into security policy across your entire organization, with built-in auditing to ease compliance processes.\nSee the [quick start guide](https://googleapis.dev/python/iamcredentials/latest/index.html#quick-start)."
 
   doc_url: https://googleapis.dev/python/iamcredentials/latest/index.html
   dev_url: https://github.com/googleapis/python-iam
