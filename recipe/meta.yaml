@@ -11,38 +11,51 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
-    - pip >=18.1
+    - python >=3.7
+    - pip
   run:
-    - python >=3.6
-    - google-api-core-grpc >=1.26.0,<2.0.0dev
-    - proto-plus >=0.4.0
-    - packaging >=14.3
+    - python >=3.7 
+    # https://github.com/googleapis/python-iam/blob/main/setup.py#L38
+    - google-api-core >=1.34.0,<3.0.0,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,!=2.10.*
+    - proto-plus >=1.22.0,<2.0.0
+    - protobuf >=3.19.5,<5.0.0,!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
 
 test:
   imports:
-    - grpc
+    - google
     - google.cloud.iam_credentials
     - google.cloud.iam_credentials_v1
+    - google.cloud.iam_v2
+    - google.api_core
+  requires:
+    - pip
+    - grpcio >=1.33.2,<2.0.0
+    - grpcio-status >=1.33.2,<2.0.0
+    - grpcio-gcp >=0.2.2,<1.0.0
 
 about:
+  summary: IAM Service Account Credentials API client library
   home: https://github.com/googleapis/python-iam
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: IAM Service Account Credentials API client library
   description: "IAM Service Account Credentials API is a Google Cloud service that lets client applications communicate with the Cloud Identity and Access Management (IAM) platform. Cloud IAM lets administrators authorize who can take action on specific resources, giving you full control and visibility to manage Google Cloud
     resources centrally. For enterprises with complex organizational structures, hundreds of workgroups, and many projects, Cloud IAM provides a unified view into security policy across your entire organization, with built-in auditing to ease compliance processes.\nSee the [quick start guide](https://googleapis.dev/python/iamcredentials/latest/index.html#quick-start)."
-
   doc_url: https://googleapis.dev/python/iamcredentials/latest/index.html
   dev_url: https://github.com/googleapis/python-iam
 
 extra:
   recipe-maintainers:
     - parthea
+    - rxm7706
+
+extra:
+  recipe-maintainers:
+    - parthea
+    - rxm7706
