@@ -33,6 +33,7 @@ test:
     - google.cloud.iam_credentials_v1
     - google.cloud.iam_v2
     - google.api_core
+    - grpc
   requires:
     - pip
     - grpcio >=1.33.2,<2.0.0
