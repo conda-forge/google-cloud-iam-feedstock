@@ -21,7 +21,6 @@ requirements:
     - pip
   run:
     - python >=3.7 
-    # https://github.com/googleapis/python-iam/blob/main/setup.py#L38
     - google-api-core-grpc >=1.34.0,<3.0.0,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,!=2.10.*
     - proto-plus >=1.22.0,<2.0.0
     - protobuf >=3.19.5,<5.0.0,!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
@@ -36,9 +35,6 @@ test:
     - grpc
   requires:
     - pip
-    - grpcio >=1.33.2,<2.0.0
-    - grpcio-status >=1.33.2,<2.0.0
-    - grpcio-gcp >=0.2.2,<1.0.0
 
 about:
   summary: IAM Service Account Credentials API client library
@@ -54,9 +50,3 @@ about:
 extra:
   recipe-maintainers:
     - parthea
-    - rxm7706
-
-extra:
-  recipe-maintainers:
-    - parthea
-    - rxm7706
