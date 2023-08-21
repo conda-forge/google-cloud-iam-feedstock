@@ -38,7 +38,7 @@ test:
 
 about:
   summary: IAM Service Account Credentials API client library
-  home: https://github.com/googleapis/python-iam
+  home: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-iam
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
