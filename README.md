@@ -151,4 +151,5 @@ Feedstock Maintainers
 =====================
 
 * [@parthea](https://github.com/parthea/)
+* [@rxm7706](https://github.com/rxm7706/)
 
