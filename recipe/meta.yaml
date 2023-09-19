@@ -1,6 +1,6 @@
 {% set name = "google-cloud-iam" %}
-{% set version = "2.12.1" %}
-{% set sha256 = "fe507085447ecf461dafd2cd4b8016c5899e58e520bd04b51bb3ab6f6b08faff" %}
+{% set version = "2.12.2" %}
+{% set sha256 = "6031d0c1911fc79ce0b8bb8f6fe1645283b9c1a9188b483dae623b53b4d8181c" %}
 
 package:
   name: {{ name|lower }}
@@ -13,14 +13,14 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
     - python >=3.7
     - pip
   run:
-    - python >=3.7 
+    - python >=3.7
     - google-api-core-grpc >=1.34.0,<3.0.0,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,!=2.10.*
     - proto-plus >=1.22.0,<2.0.0
     - protobuf >=3.19.5,<5.0.0,!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
