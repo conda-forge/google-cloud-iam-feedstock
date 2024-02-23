@@ -1,6 +1,6 @@
 {% set name = "google-cloud-iam" %}
-{% set version = "2.14.1" %}
-{% set sha256 = "f4af42b9903ed5e1ebba47d284262539bdd55eae4a302fed030c7d83c0bd5166" %}
+{% set version = "2.14.2" %}
+{% set sha256 = "57d53b280ce211b92dbb7bf8a1bd0138dbfe37ba03602ffe7b3679b2b4d554b1" %}
 
 package:
   name: {{ name|lower }}
