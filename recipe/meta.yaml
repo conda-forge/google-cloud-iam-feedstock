@@ -1,13 +1,13 @@
 {% set name = "google-cloud-iam" %}
-{% set version = "2.15.1" %}
-{% set sha256 = "a24084d7ef187d003fb506738481447c4c95db124214efe4912b30c0c7de8dd8" %}
+{% set version = "2.15.2" %}
+{% set sha256 = "09b135d96ba2cf6f80a7ed8011436e89d2588e8bb23cd6145c476302f4871a82" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
