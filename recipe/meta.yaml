@@ -1,6 +1,6 @@
 {% set name = "google-cloud-iam" %}
-{% set version = "2.21.0" %}
-{% set sha256 = "fc560527e22b97c6cbfba0797d867cf956c727ba687b586b9aa44d78e92281a3" %}
+{% set version = "2.22.0" %}
+{% set sha256 = "203ddfece17e014ee4fbc5c3244daa14a88b7ee57c8e3a7622d0f2a1a3b8d7f3" %}
 
 package:
   name: {{ name|lower }}
@@ -23,11 +23,11 @@ requirements:
   run:
     - grpcio >=1.33.2,<2.0.0
     - python >={{ python_min }}
-    - google-api-core >=1.34.1,<3.0.0,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,!=2.10.*
+    - google-api-core >=2.11.0,<3.0.0
     - google-auth >=2.14.1,<3.0.0,!=2.24.0,!=2.25.0
     - grpc-google-iam-v1 >=0.12.4,<1.0.0
     - proto-plus >=1.22.3,<2.0.0
-    - protobuf >=3.20.2,<7.0.0,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
+    - protobuf >=4.25.8,<8.0.0
 
 test:
   imports:
